@@ -1,5 +1,28 @@
+/* header */
 .app-header {
-    background-color: blueviolet; 
+    background-color: white; 
+}
+.app-header a{
+     color:black;
+}
+
+.app-header a:hover{
+     color:green
+}
+
+.brand-first {
+    color:green;
+}
+
+.left-fix {
+    margin-left: 200px;
+}
+
+/* header ends */
+
+
+body {
+    background-color: #E5E5E5;
 }
 
 /* fallback */
