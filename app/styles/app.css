@@ -48,6 +48,37 @@ body {
 
 /* home slider ends */
 
+
+/* movie-list-card */
+
+.list-category {
+    display:inline-block;
+    margin-top: 22px;
+    margin-left: 16px; 
+}
+
+.list-category .list-title {
+    font-size: 20px;
+}
+
+.card-panel {
+    padding:0px!important;
+}
+
+.card a{
+    color:#AA00FF!important;
+}
+.card a:hover{
+    color: #ffd8a6!important;
+}
+
+.card-title {
+    line-height: 20px!important;
+    font-size: 16px!important;
+}
+
+/* movie-list-card-ends */
+
 /* footer */
 
 footer.page-footer {
