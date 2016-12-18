@@ -7,7 +7,8 @@
 }
 
 .app-header a:hover{
-     color:#AA00FF
+     color:#AA00FF;
+     text-decoration: none;
 }
 
 .brand-first {
@@ -19,7 +20,7 @@
 }
 
 .left-fix {
-    margin-left: 100px;
+    margin-left: 150px;
 }
 
 .app-header .btn, .app-header .btn-large {
@@ -62,7 +63,7 @@ body {
 }
 
 .card-panel {
-    padding:0px!important;
+    padding:0px 4px 0px 4px!important;
 }
 
 .card a{

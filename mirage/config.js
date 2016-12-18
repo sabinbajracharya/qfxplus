@@ -1,5 +1,42 @@
 export default function() {
 
+  this.namespace = '/apiv1';
+
+  let movielist = [{
+        type: 'movie',
+        id: 6903,
+        attributes: {
+          title: 'Befikre',
+          rating: 'Adult',
+          annotation: 'Befikre is a story that celebrates being carefree in love. A quintessential Delhi boy Dharam (Ranveer Singh) comes to Paris for work in search of an adventure. Just when he was about to embark on` this journey of his life he bumps into a wild, free spirited, French born Indian.',
+          type: 'Now Showing',
+          bedrooms: 15,
+          image: 'http://qfxcinemas.com/Home/GetThumbnailImage?EventID=6903'
+        }
+      }, {
+        type: 'movie',
+        id: 6909,
+        attributes: {
+          title: '3D Rogue One: A Star Wars Story',
+          rating: 'PG',
+          annotation: 'The Rebellion makes a risky move to steal the plans to the Death Star, setting up the epic saga to follow.',
+          type: 'Now Showing',
+          bedrooms: 1,
+          image: 'http://qfxcinemas.com/Home/GetThumbnailImage?EventID=6909'
+        }
+      }, {
+        type: 'movie',
+        id: 6912,
+        attributes: {
+          title: 'Wajah Tum Ho',
+          rating: 'Adult',
+          annotation: 'People get entangled in a mystery when a murder is committed on live television.',
+          type: 'Now Showing',
+          bedrooms: 3,
+          image: 'http://qfxcinemas.com/Home/GetThumbnailImage?EventID=6912'
+        }
+      }];
+
   // These comments are here to help you get started. Feel free to delete them.
 
   /*
@@ -23,4 +60,9 @@ export default function() {
 
     http://www.ember-cli-mirage.com/docs/v0.2.x/shorthands/
   */
+  this.get('/movies', function() {
+    return {
+      data: movielist
+    };
+  });
 }
