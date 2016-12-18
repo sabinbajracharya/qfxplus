@@ -7,23 +7,56 @@
 }
 
 .app-header a:hover{
-     color:green
+     color:#AA00FF
 }
 
 .brand-first {
-    color:green;
+    color: #AA00FF;
+}
+
+.app-header li a {
+    font-weight: bold;
 }
 
 .left-fix {
-    margin-left: 200px;
+    margin-left: 100px;
+}
+
+.app-header .btn, .app-header .btn-large {
+    background-color: #AA00FF;
+    color:white;
+}
+
+.app-header .btn:hover, .app-header .btn-large:hover {
+    background-color: #AA00FF;
+    color:white;
 }
 
 /* header ends */
 
 
 body {
-    background-color: #E5E5E5;
+    /* background-color: #ECEBD9; */
+    background: #ECEBD9 url('../images/background.jpg') top repeat-x;
 }
+
+/* home sldier */
+
+.carousel .carousel-item img {
+    
+}
+
+/* home slider ends */
+
+/* footer */
+
+footer.page-footer {
+    background-color: #AA00FF; 
+}
+
+/* footer ends */
+
+
 
 /* fallback */
 @font-face {
