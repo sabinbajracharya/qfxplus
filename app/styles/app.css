@@ -161,4 +161,11 @@ footer.page-footer {
     resize: none;
     min-height: 80px;
     height: 100%;
+    margin-bottom: 8px;
+}
+.post-comment .btn{
+    background-color: #64DD17;
+    margin-top: 8px;
+    color:white;
+    font-weight: bold;
 }
