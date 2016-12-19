@@ -77,4 +77,7 @@ export default function() {
         ) 
     };
   });
+
+  //this.pretender.get('/*https://www.googleapis.com/', this.pretender.passthrough);
+  this.passthrough('https://www.googleapis.com/**');
 }

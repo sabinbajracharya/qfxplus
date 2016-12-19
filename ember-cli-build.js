@@ -22,6 +22,7 @@ module.exports = function(defaults) {
   
   app.import('vendor/css/materialize.css');
   app.import('vendor/js/materialize.js');
+  app.import('vendor/js/firebase.js');
 
   return app.toTree();
 };
