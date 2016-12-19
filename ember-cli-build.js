@@ -21,6 +21,7 @@ module.exports = function(defaults) {
   // along with the exports of each module as its value.
   
   app.import('vendor/css/materialize.css');
+  app.import('vendor/css/comments.css');
   app.import('vendor/js/materialize.js');
   app.import('vendor/js/firebase.js');
 

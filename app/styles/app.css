@@ -38,7 +38,7 @@
 
 body {
     /* background-color: #ECEBD9; */
-    background: #ECEBD9 url('../images/background.jpg') top repeat-x;
+    background: #ECEBD9 url('images/background.jpg') top repeat-x;
 }
 
 /* home sldier */
@@ -153,3 +153,12 @@ footer.page-footer {
 }
 
 /* movie-detail-sidebar ends */
+
+
+
+.material-comment textarea{
+    border: 1px solid #DDDDDD;
+    resize: none;
+    min-height: 80px;
+    height: 100%;
+}
