@@ -7,4 +7,5 @@ export default DS.Model.extend({
   image: DS.attr(),
   version: DS.attr(),
   type: DS.attr(),
+  youtubeurl: DS.attr()
 });

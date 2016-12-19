@@ -11,6 +11,7 @@ export default function() {
           annotation: 'Befikre is a story that celebrates being carefree in love. A quintessential Delhi boy Dharam (Ranveer Singh) comes to Paris for work in search of an adventure. Just when he was about to embark on` this journey of his life he bumps into a wild, free spirited, French born Indian.',
           type: 'Now Showing',
           bedrooms: 15,
+          youtubeurl: 'https://www.youtube.com/embed/wzY8Bzz9FS4',
           image: 'http://qfxcinemas.com/Home/GetThumbnailImage?EventID=6903'
         }
       }, {
@@ -22,6 +23,7 @@ export default function() {
           annotation: 'The Rebellion makes a risky move to steal the plans to the Death Star, setting up the epic saga to follow.',
           type: 'Now Showing',
           bedrooms: 1,
+          youtubeurl: 'https://www.youtube.com/embed/T_Mr2XfpADo',
           image: 'http://qfxcinemas.com/Home/GetThumbnailImage?EventID=6909'
         }
       }, {
@@ -33,6 +35,7 @@ export default function() {
           annotation: 'People get entangled in a mystery when a murder is committed on live television.',
           type: 'Now Showing',
           bedrooms: 3,
+          youtubeurl: 'https://www.youtube.com/embed/sBueTW-W7Qc',
           image: 'http://qfxcinemas.com/Home/GetThumbnailImage?EventID=6912'
         }
       }];

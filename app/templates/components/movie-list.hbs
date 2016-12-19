@@ -4,7 +4,7 @@
     </span>
 </div>
 
-<div class="row">
+<div class="row show-list">
     {{#each movies as |movie|}}
         <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
           <div class="card sticky-action medium" style="overflow: hidden;">
@@ -15,8 +15,9 @@
                 <span class="card-title activator grey-text text-darken-4">{{movie.title}}<i class="material-icons right">more_vert</i></span>
               </div>
 
-              <div class="card-action">
-                <a href="#">Detail</a>
+              <div class="card-action movie-action">
+                <!--<a href="#">Detail</a>-->
+                {{#link-to 'movies.detail' movie.id}}Detail{{/link-to}}
                 <a href="#">Ticket</a>
               </div>
 
