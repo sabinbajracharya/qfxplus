@@ -3,7 +3,7 @@ export default function() {
   this.namespace = '/apiv1';
 
   let movielist = [{
-        type: 'movie',
+        type: 'movies',
         id: 6903,
         attributes: {
           title: 'Befikre',
@@ -14,7 +14,7 @@ export default function() {
           image: 'http://qfxcinemas.com/Home/GetThumbnailImage?EventID=6903'
         }
       }, {
-        type: 'movie',
+        type: 'movies',
         id: 6909,
         attributes: {
           title: '3D Rogue One: A Star Wars Story',
@@ -25,7 +25,7 @@ export default function() {
           image: 'http://qfxcinemas.com/Home/GetThumbnailImage?EventID=6909'
         }
       }, {
-        type: 'movie',
+        type: 'movies',
         id: 6912,
         attributes: {
           title: 'Wajah Tum Ho',
@@ -63,6 +63,15 @@ export default function() {
   this.get('/movies', function() {
     return {
       data: movielist
+    };
+  });
+
+   // Find and return the provided rental from our rental list above
+  this.get('/movies/:id', function (db, request) {
+    return { 
+      data: movielist.find(
+          (movie) => request.params.id == movie.id
+        ) 
     };
   });
 }
