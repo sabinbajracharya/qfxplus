@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 const fbase = firebase;
-const config = {
+const CONFIG = {
       apiKey: "AIzaSyBJ8DEEa9fpKvwdGJmapczDJIqf3OVBSUo",
       authDomain: "qfxplus.firebaseapp.com",
       databaseURL: "https://qfxplus.firebaseio.com",
@@ -12,7 +12,7 @@ const config = {
 export default Ember.Object.extend({
 
     init() {
-      fbase.initializeApp(config);
+      fbase.initializeApp(CONFIG);
     },
 
     getFirebase(){
