@@ -14,11 +14,11 @@
                         <h6 class="text-muted time">Leave a comment below</h6>
                     </div>
                     <div class="pull-right post-comment">
-                        <button class="waves-effect waves-light btn" {{action 'login' }}>Post</button>
+                        <button class="waves-effect waves-light btn" {{action 'onPostComment' movieId user}}>Post</button>
                     </div>
                 </div> 
                 <div class="post-description material-comment"> 
-                    <textarea class="txt-comment"></textarea>
+                    {{textarea class="txt-comment" value=comment}}
                 </div>
             </div>
         </div>
@@ -34,69 +34,37 @@
     {{/if}}
 
 <!-- comment box ends -->
-
-    <div class="col-md-8">
-        <div class="panel panel-white post panel-shadow">
-            <div class="post-heading">
-                <div class="pull-left image">
-                    <img src="http://bootdey.com/img/Content/user_1.jpg" class="img-circle avatar" alt="user profile image">
-                </div>
-                <div class="pull-left meta">
-                    <div class="title h5">
-                        <a href="#"><b>Ryan Haywood</b></a>
-                        made a post.
+    {{#each commentsList as |value|}}
+        <div class="col-md-8">
+            <div class="panel panel-white post panel-shadow">
+                <div class="post-heading">
+                    <div class="pull-left image">
+                        <!-- <img src="http://bootdey.com/img/Content/user_1.jpg" class="img-circle avatar" alt="user profile image">-->
+                        <img src="{{value.photoURL}}" class="img-circle avatar" alt="user profile image">
                     </div>
-                    <h6 class="text-muted time">1 minute ago</h6>
-                </div>
-            </div> 
-            <div class="post-description"> 
-                <p>Bootdey is a gallery of free snippets resources templates and utilities for bootstrap css hmtl js framework. Codes for developers and web designers</p>
-                <!-- <div class="stats">
-                        <a href="#" class="btn btn-default stat-item">
-                            <i class="fa fa-thumbs-up icon"></i>2
-                        </a>
-                        <a href="#" class="btn btn-default stat-item">
-                            <i class="fa fa-thumbs-down icon"></i>12
-                        </a>
+                    <div class="pull-left meta">
+                        <div class="title h5">
+                            <a href="#"><b>{{value.name}}</b></a>
+                            made a post.
+                        </div>
+                        <h6 class="text-muted time">1 minute ago</h6>
                     </div>
-                -->
+                </div> 
+                <div class="post-description"> 
+                    <p>{{value.message}}</p>
+                    <!-- <div class="stats">
+                            <a href="#" class="btn btn-default stat-item">
+                                <i class="fa fa-thumbs-up icon"></i>2
+                            </a>
+                            <a href="#" class="btn btn-default stat-item">
+                                <i class="fa fa-thumbs-down icon"></i>12
+                            </a>
+                        </div>
+                    -->
+                </div>
             </div>
         </div>
-    </div>
-
-
-
-
-    <div class="col-md-8">
-        <div class="panel panel-white post panel-shadow">
-            <div class="post-heading">
-                <div class="pull-left image">
-                    <img src="http://bootdey.com/img/Content/user_1.jpg" class="img-circle avatar" alt="user profile image">
-                </div>
-                <div class="pull-left meta">
-                    <div class="title h5">
-                        <a href="#"><b>Ryan Haywood</b></a>
-                        made a post.
-                    </div>
-                    <h6 class="text-muted time">1 minute ago</h6>
-                </div>
-            </div> 
-            <div class="post-description"> 
-                <p>Bootdey is a gallery of free snippets resources templates and utilities for bootstrap css hmtl js framework. Codes for developers and web designers</p>
-                <!-- <div class="stats">
-                        <a href="#" class="btn btn-default stat-item">
-                            <i class="fa fa-thumbs-up icon"></i>2
-                        </a>
-                        <a href="#" class="btn btn-default stat-item">
-                            <i class="fa fa-thumbs-down icon"></i>12
-                        </a>
-                    </div>
-                -->
-            </div>
-        </div>
-    </div>
-
-
-
+    {{/each}}
 </div>
+
 {{yield}}

@@ -10,7 +10,6 @@ export default Ember.Object.extend({
   },
 
   setUpScope(){
-      console.log(this.get(FIREBASE));
       var fbase = this.get(FIREBASE);
       var provider = new fbase.auth.FacebookAuthProvider();
       provider.addScope('user_birthday');

@@ -4,7 +4,8 @@ var FBConstants = {
     PROVIDER: 'provider',
     FIREBASE: 'firebase',
     TOKEN_KEY: 'token',
-    USER_DATA: 'user'   
+    USER_DATA: 'user',
+    DATABASE: 'database'   
 }
 
 Object.defineProperty( FBConstants, "FIREBASE_CONSTANT", {

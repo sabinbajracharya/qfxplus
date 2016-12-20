@@ -27,9 +27,14 @@ export default Ember.Service.extend({
 
     getLoggedInUser(callback){
         this.get(FACEBOOK_UTIL).getUser(callback);
+    },
+
+    addMovieComment(movieId, name, message, photoURL){
+       this.get(FIREBASE_UTIL).addComment(movieId, name, message, photoURL);
+    },
+
+    getAllComments(movieId, callback){
+        this.get(FIREBASE_UTIL).allComments(movieId, callback);
     }
-
-
-
 
 });

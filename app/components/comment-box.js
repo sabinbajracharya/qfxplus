@@ -12,15 +12,24 @@ export default Ember.Component.extend({
 
     didInsertElement(){
         var self = this;
-        var user = this.get('firebaseservice').getLoggedInUser(function(user){
-             console.log('didInsertElement called callback');
+        this.get('firebaseservice').getLoggedInUser(function(user){
             if(user){
                 self.set('isLoggedIn', true);
                 self.set('user', user);
-                console.log(user);
             }else{
                 self.set('isLoggedIn', false);
             }
-       });
-    }
+        });
+
+        this.get('firebaseservice').getAllComments(this.get('movieId'), function(values){
+           self.set('commentsList', values)
+           //return values;
+        });       
+    },
+    actions: {
+        onPostComment(movieId, user){
+            var comment = this.get('comment');
+            this.get('firebaseservice').addMovieComment(movieId, user.displayName, comment, user.photoURL);
+        }
+    },
 });
