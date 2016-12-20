@@ -25,8 +25,8 @@ export default Ember.Service.extend({
         fbook.fbSignIn();
     },
 
-    getLoggedInUser(){
-        return this.get(FACEBOOK_UTIL).getUser();
+    getLoggedInUser(callback){
+        this.get(FACEBOOK_UTIL).getUser(callback);
     }
 
 

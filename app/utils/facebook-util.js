@@ -64,14 +64,36 @@ export default Ember.Object.extend({
     return this.get(TOKEN_KEY); 
   },
 
-  getUser(){
-    var user = this.get(FIREBASE).auth().currentUser;
-    if (user) {
+  setUser(callback){
+    
+  },
+
+  getUser(callback){
+    if(!this.get('loggedin_user')){
+      console.log('new session');
+      var self = this;
+      this.get(FIREBASE).auth().onAuthStateChanged(function(user){
+        self.set('loggedin_user', true);
+        callback(user);
+      });
+    }else{
+      console.log('old session');
+      var user = this.get(FIREBASE).auth().currentUser;
+      callback(user);
+    }
+    
+    //var user = 
+    //return user;
+  }
+    
+    //return user;
+    /*if (user) {
       // User is signed in.
     } else {
       // No user is signed in.
     }
     return this.get('hello');
-  }
+    */
+
 
 });
