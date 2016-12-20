@@ -23,14 +23,16 @@
             </div>
         </div>
     {{else}}
-        <div class="col-md-8">
-            <div class="panel panel-white post panel-shadow">
-                <div class="post-heading">
-                    <h4 class="flow-text center-align">Login to leave a comment...</h4> 
-                </div> 
-            
+        <<div class="row">
+            <div class="col-md-8">
+                <div class="card-panel teal comment-login">
+                    <a class="white-text" {{action 'login'}}>
+                        Want to comment? Just Login with Facebook.
+                    </a>
+                </div>
             </div>
-        </div>  
+        </div>
+            
     {{/if}}
 
 <!-- comment box ends -->
@@ -45,9 +47,9 @@
                     <div class="pull-left meta">
                         <div class="title h5">
                             <a href="#"><b>{{value.name}}</b></a>
-                            made a post.
+                            made a comment.
                         </div>
-                        <h6 class="text-muted time">1 minute ago</h6>
+                        <h6 class="text-muted time">{{value.timeago}}</h6>
                     </div>
                 </div> 
                 <div class="post-description"> 

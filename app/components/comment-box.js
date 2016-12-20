@@ -29,7 +29,11 @@ export default Ember.Component.extend({
     actions: {
         onPostComment(movieId, user){
             var comment = this.get('comment');
+            this.set('comment', ''); //reset the comment box
             this.get('firebaseservice').addMovieComment(movieId, user.displayName, comment, user.photoURL);
+        },
+        login(){
+            this.get('firebaseservice').login();
         }
     },
 });

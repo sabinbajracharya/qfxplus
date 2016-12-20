@@ -1,5 +1,6 @@
 import Ember from 'ember';
 import FBConstants from '../constants/FireBaseConstants';
+import TimeAgo from './timeago';
 
 const {DATABASE} = FBConstants;
 const fbase = firebase;
@@ -26,7 +27,8 @@ export default Ember.Object.extend({
       newPostRef.set({
         name: name,
         message: message,
-        photoURL : photoURL
+        photoURL : photoURL,
+        time: Date.now()
       });
       commentRef.once('value', function(snapshot) {
         console.log(snapshot.val());
@@ -35,13 +37,15 @@ export default Ember.Object.extend({
 
     allComments(movieId, callback){
       this.get(DATABASE).ref('movies/' + movieId).orderByKey().limitToLast(100).on('value', function(snapshot) {
-          var comments = [];
-           snapshot.forEach(function(childSnapshot) {
-              //var childKey = childSnapshot.key();
-              var childData = childSnapshot.val();
-                comments.push(childData);
-            });
-          callback(comments.reverse());
+        var now = Date.now();
+        var comments = [];
+        snapshot.forEach(function(childSnapshot) {
+            //var childKey = childSnapshot.key();
+            var childData = childSnapshot.val();
+            childData.timeago = TimeAgo(now, childData.time);
+            comments.push(childData);
+          });
+        callback(comments.reverse());
         });
     },
 
