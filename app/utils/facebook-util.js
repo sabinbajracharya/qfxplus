@@ -40,7 +40,7 @@ export default Ember.Object.extend({
       }).catch(function(error) {
         // Handle Errors here.
         var errorCode = error.code;
-        alert(errorCode);
+        //alert(errorCode);
         var errorMessage = error.message;
         // The email of the user's account used.
         var email = error.email;
@@ -70,30 +70,15 @@ export default Ember.Object.extend({
 
   getUser(callback){
     if(!this.get('loggedin_user')){
-      console.log('new session');
       var self = this;
       this.get(FIREBASE).auth().onAuthStateChanged(function(user){
         self.set('loggedin_user', true);
         callback(user);
       });
     }else{
-      console.log('old session');
       var user = this.get(FIREBASE).auth().currentUser;
       callback(user);
     }
-    
-    //var user = 
-    //return user;
   }
-    
-    //return user;
-    /*if (user) {
-      // User is signed in.
-    } else {
-      // No user is signed in.
-    }
-    return this.get('hello');
-    */
-
 
 });

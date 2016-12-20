@@ -1,27 +1,37 @@
 
 <div class="row">
-
-   <div class="col-md-8">
-        <div class="panel panel-white post panel-shadow">
-            <div class="post-heading">
-                <div class="pull-left image">
-                    <img src="http://bootdey.com/img/Content/user_1.jpg" class="img-circle avatar" alt="user profile image">
-                </div>
-                <div class="pull-left meta">
-                    <div class="title h5">
-                        <a href="#"><b>Ryan Haywood</b></a>
+    {{#if isLoggedIn}}
+         <div class="col-md-8">
+            <div class="panel panel-white post panel-shadow">
+                <div class="post-heading">
+                    <div class="pull-left image">
+                        <img src="{{user.photoURL}}" class="img-circle avatar" alt="user profile image">
                     </div>
-                    <h6 class="text-muted time">Leave a comment below</h6>
+                    <div class="pull-left meta">
+                        <div class="title h5">
+                            <a href="#"><b>{{user.displayName}}</b></a>
+                        </div>
+                        <h6 class="text-muted time">Leave a comment below</h6>
+                    </div>
+                    <div class="pull-right post-comment">
+                        <button class="waves-effect waves-light btn" {{action 'login' }}>Post</button>
+                    </div>
+                </div> 
+                <div class="post-description material-comment"> 
+                    <textarea class="txt-comment"></textarea>
                 </div>
-                <div class="pull-right post-comment">
-                    <button class="waves-effect waves-light btn" {{action 'login' }}>Post</button>
-                </div>
-            </div> 
-            <div class="post-description material-comment"> 
-                <textarea class="txt-comment"></textarea>
             </div>
         </div>
-    </div>
+    {{else}}
+        <div class="col-md-8">
+            <div class="panel panel-white post panel-shadow">
+                <div class="post-heading">
+                    <h4 class="flow-text center-align">Login to leave a comment...</h4> 
+                </div> 
+            
+            </div>
+        </div>  
+    {{/if}}
 
 <!-- comment box ends -->
 
