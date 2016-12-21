@@ -13,12 +13,13 @@
               </div>
               <div class="card-content">
                 <span class="card-title activator grey-text text-darken-4">{{movie.eventname}}<i class="material-icons right">more_vert</i></span>
+                <div class = "rating-movie">{{movie.eventratingdescription}} | {{movie.genre}}</div>
               </div>
 
               <div class="card-action movie-action">
                 <!--<a href="#">Detail</a>-->
                 {{#link-to 'movies.detail' movie.id}}Detail{{/link-to}}
-                <a href="#">Ticket</a>
+                <!-- <a href="#">Ticket</a> -->
               </div>
 
               <div class="card-reveal">

@@ -341,4 +341,5 @@ export default function() {
   this.passthrough('https://www.googleapis.com/**');
   this.passthrough('https://securetoken.googleapis.com/**');
   this.passthrough('http://sabin.wlink.com.np/**');
+  this.passthrough('http://localhost/**');
 }
