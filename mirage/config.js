@@ -315,10 +315,17 @@ export default function() {
 
     http://www.ember-cli-mirage.com/docs/v0.2.x/shorthands/
   */
-  this.get('/movies', function() {
-    return {
-      data: movielist
-    };
+  this.get('/movies', function(db, request) {
+     if(request.queryParams.movietime !== undefined) {
+        let filteredMovies = movielist.filter(function(i) {
+          return i.attributes.movietime.toLowerCase().indexOf(request.queryParams.movietime.toLowerCase()) !== -1;
+        });
+         return { data: filteredMovies };
+     }else{
+        return {
+          data: movielist
+        };
+     }
   });
 
    // Find and return the provided rental from our rental list above
