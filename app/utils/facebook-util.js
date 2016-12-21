@@ -26,15 +26,14 @@ export default Ember.Object.extend({
       var that = this;
       this.get(FIREBASE).auth().signInWithPopup(provider).then(function(result) {
         // This gives you a Facebook Access Token. You can use it to access the Facebook API.
-        console.log('facebook result');
         //console.log(result);
         var token = result.credential.accessToken;
         // The signed-in user info.
         var user = result.user;
         that.set(TOKEN_KEY, token);
         that.set(USER_DATA, user);
-        console.log(that.get(TOKEN_KEY));
-        console.log(user.get(USER_DATA));
+        //console.log(that.get(TOKEN_KEY));
+        //console.log(user.get(USER_DATA));
         // ...
       }).catch(function(error) {
         // Handle Errors here.
@@ -45,7 +44,7 @@ export default Ember.Object.extend({
         var email = error.email;
         // The firebase.auth.AuthCredential type that was used.
         var credential = error.credential;
-        console.log(errorCode);
+        //console.log(errorCode);
         // ...
       });
     }

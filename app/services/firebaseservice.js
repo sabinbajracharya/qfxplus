@@ -25,6 +25,11 @@ export default Ember.Service.extend({
         fbook.fbSignIn();
     },
 
+    logout(){
+         var fbook = this.get(FACEBOOK_UTIL);
+         fbook.fbSignOut();
+    },
+
     getLoggedInUser(callback){
         this.get(FACEBOOK_UTIL).getUser(callback);
     },

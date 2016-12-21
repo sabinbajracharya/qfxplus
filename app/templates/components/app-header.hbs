@@ -2,20 +2,35 @@
     <div class="nav-wrapper">
       {{#link-to 'index' class="brand-logo"}}&nbsp;QFX<span class="brand-first">Plus</span>{{/link-to}}
       <!-- <a href="#" data-activates="mobile-demo" class="button-collapse btn-floating btn-large waves-effect waves-light red"><i class="material-icons">menu</i></a> -->
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a> 
+      <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a> 
       <ul class="left-fix hide-on-med-and-down">
         <li>{{#link-to 'index'}}Home{{/link-to}}</li>
         <li><a href="badges.html">About</a></li>
         <li><a href="collapsible.html">Contact</a></li>
       </ul>
       <ul class="right hide-on-med-and-down">
-        <li><a class="waves-effect waves-light btn" {{action 'login' }}>Login</a></li>
+        <li><a class="waves-effect waves-light btn" {{action 'toggleLogin' }}>
+              {{#if isLoggedIn}}
+                Logout
+              {{else}}
+                Login
+              {{/if}}    
+            </a>
+        </li>
       </ul>
-      <ul class="side-nav" id="mobile-demo">
+      <ul class="side-nav" id="slide-out">
         <li><img src="http://qfxcinemas.com/home/GetMobileAdImage?EventID=15" style="width:100%;"></li>
         <li>{{#link-to 'index'}}Home{{/link-to}}</li>
         <li><a href="badges.html">About</a></li>
         <li><a href="collapsible.html">Contact</a></li>
+        <li><a class="waves-effect waves-light btn" {{action 'toggleLogin' }}>
+              {{#if isLoggedIn}}
+                Logout
+              {{else}}
+                Login
+              {{/if}}    
+            </a>
+        </li>
       </ul>
     </div>
   </nav>
