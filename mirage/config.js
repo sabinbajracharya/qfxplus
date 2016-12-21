@@ -17,7 +17,7 @@ export default function() {
                       "director": "Gareth Edwards",
                       "movielength": "2 Hrs 13 Min",
                       "annotation": "The Rebellion makes a risky move to steal the plans to the Death Star, setting up the epic saga to follow.",
-                      "youtubeurl": "https://www.youtube.com/watch?v=T_Mr2XfpADo",
+                      "youtubeurl": "https://www.youtube.com/embed/T_Mr2XfpADo",
                       "image": "http://qfxcinemas.com/Home/GetThumbnailImage?eventid=6909"
                     }
                   }, {
@@ -35,7 +35,7 @@ export default function() {
                       "director": "Aditya Chopra",
                       "movielength": "2 Hrs 12 Min",
                       "annotation": "Befikre is a story that celebrates being carefree in love. A quintessential Delhi boy Dharam (Ranveer Singh) comes to Paris for work in search of an adventure. Just when he was about to embark on` this journey of his life he bumps into a wild, free spirited, French born Indian.",
-                      "youtubeurl": "https://www.youtube.com/watch?v=p7X7mwcEJ-w",
+                      "youtubeurl": "https://www.youtube.com/embed/p7X7mwcEJ-w",
                       "image": "http://qfxcinemas.com/Home/GetThumbnailImage?eventid=6903"
                     }
                   }, {
@@ -53,7 +53,7 @@ export default function() {
                       "director": "Pradeep Bhattarai",
                       "movielength": "2 Hrs 26 Min",
                       "annotation": "Jatra is a tale of three shopkeepers struggling to make ends meet in Ason Galli, Kathmandu accidently finding fortune which can change their lives.However, the same fortune brings series of curses that brings turbulence in their respective lives thus ensuring riot of laughters and tears.",
-                      "youtubeurl": "https://www.youtube.com/watch?v=c5YQejT_ybk",
+                      "youtubeurl": "https://www.youtube.com/embed/c5YQejT_ybk",
                       "image": "http://qfxcinemas.com/Home/GetThumbnailImage?eventid=6866"
                     }
                   }, {
@@ -71,7 +71,7 @@ export default function() {
                       "director": "Ron Clements",
                       "movielength": "1 Hrs 53 Min",
                       "annotation": "A young woman uses her navigational talents to set sail for a fabled island. Joining her on the adventure is her hero, the legendary demi-god Maui.",
-                      "youtubeurl": "https://www.youtube.com/watch?v=LKFuXETZUsI",
+                      "youtubeurl": "https://www.youtube.com/embed/LKFuXETZUsI",
                       "image": "http://qfxcinemas.com/Home/GetThumbnailImage?eventid=6899"
                     }
                   }, {
@@ -89,7 +89,7 @@ export default function() {
                       "director": "Deepak Rauniyar",
                       "movielength": "1 Hrs 30 Min",
                       "annotation": "When his father dies, anti-regime partisan Chandra must travel to his remote mountain village after nearly a decade away. Little Pooja is anxiously awaiting the man she thinks is her father, but she's confused when Chandra arrives with Badri, a young street orphan rumored to be his son. Chandra must face his brother Suraj, who was on the opposing side during the Nepali civil war. The two brothers cannot put aside political feelings while carrying their father's body down the steep mountain path to the river for cremation. Suraj storms off in a rage, leaving Chandra with no other men strong enough to help. Under pressure from the village elders, Chandra must seek help from outside the village to obey the rigid caste and discriminatory gender traditions he fought to eliminate during the war. Chandra searches for a solution in neighboring villages, among the police, guests at a local wedding, and rebel guerrillas...",
-                      "youtubeurl": "https://www.youtube.com/watch?v=ADtFVw-AdS0",
+                      "youtubeurl": "https://www.youtube.com/embed/ADtFVw-AdS0",
                       "image": "http://qfxcinemas.com/Home/GetThumbnailImage?eventid=6901"
                     }
                   }, {
@@ -107,7 +107,7 @@ export default function() {
                       "director": "VishalPandya ",
                       "movielength": "2 Hrs 16 Min",
                       "annotation": "People get entangled in a mystery when a murder is committed on live television.",
-                      "youtubeurl": "https://www.youtube.com/watch?v=sBueTW-W7Qc",
+                      "youtubeurl": "https://www.youtube.com/embed/sBueTW-W7Qc",
                       "image": "http://qfxcinemas.com/Home/GetThumbnailImage?eventid=6912"
                     }
                   }, {
@@ -125,7 +125,7 @@ export default function() {
                       "director": "David Yates",
                       "movielength": "2 Hrs 13 Min",
                       "annotation": "The adventures of writer Newt Scamander in New York's secret community of witches and wizards seventy years before Harry Potter reads his book in school.",
-                      "youtubeurl": "https://www.youtube.com/watch?v=MtjfNzEVfAQ&spfreload=10",
+                      "youtubeurl": "https://www.youtube.com/embed/MtjfNzEVfAQ&spfreload=10",
                       "image": "http://qfxcinemas.com/Home/GetThumbnailImage?eventid=6872"
                     }
                   }, {
@@ -143,7 +143,7 @@ export default function() {
                       "director": "Morten Tyldum",
                       "movielength": "1 Hrs 56 Min",
                       "annotation": "A spacecraft traveling to a distant colony planet and transporting thousands of people has a malfunction in its sleep chambers. As a result, two passengers are awakened 90 years early.",
-                      "youtubeurl": "https://www.youtube.com/watch?v=7BWWWQzTpNU",
+                      "youtubeurl": "https://www.youtube.com/embed/7BWWWQzTpNU",
                       "image": "http://qfxcinemas.com/Home/GetThumbnailImage?eventid=6905"
                     }
                   }, {
@@ -161,7 +161,7 @@ export default function() {
                       "director": "Morten Tyldum",
                       "movielength": "1 Hrs 56 Min",
                       "annotation": "A spacecraft traveling to a distant colony planet and transporting thousands of people has a malfunction in its sleep chambers. As a result, two passengers are awakened 90 years early.",
-                      "youtubeurl": "https://www.youtube.com/watch?v=7BWWWQzTpNU",
+                      "youtubeurl": "https://www.youtube.com/embed/7BWWWQzTpNU",
                       "image": "http://qfxcinemas.com/Home/GetThumbnailImage?eventid=6907"
                     }
                   }, {
@@ -179,7 +179,7 @@ export default function() {
                       "director": "Nitesh Tiwari",
                       "movielength": "2 Hrs 41 Min",
                       "annotation": "Biopic of Mahavir Singh Phogat, who taught wrestling to his daughters Babita Kumari and Geeta Phogat. Geeta Phogat was India's first female wrestler to win at the 2010 Commonwealth Games, where she won the gold medal (52 kg) while her sister Babita Kumari won the silver (55 kg)",
-                      "youtubeurl": "https://www.youtube.com/watch?v=x_7YlGv9u1g",
+                      "youtubeurl": "https://www.youtube.com/embed/x_7YlGv9u1g",
                       "image": "http://qfxcinemas.com/Home/GetThumbnailImage?eventid=6915"
                     }
                   }, {
@@ -197,7 +197,7 @@ export default function() {
                       "director": "Justin Kurzel",
                       "movielength": "1 Hrs 30 Min",
                       "annotation": "When Callum Lynch explores the memories of his ancestor Aguilar and gains the skills of a Master Assassin, he discovers he is a descendant of the secret Assassins society.",
-                      "youtubeurl": "https://www.youtube.com/watch?v=IP3pHwh8kq4",
+                      "youtubeurl": "https://www.youtube.com/embed/IP3pHwh8kq4",
                       "image": "http://qfxcinemas.com/Home/GetThumbnailImage?eventid=6904"
                     }
                   }, {
@@ -215,7 +215,7 @@ export default function() {
                       "director": "Justin Kurzel",
                       "movielength": "1 Hrs 30 Min",
                       "annotation": "When Callum Lynch explores the memories of his ancestor Aguilar and gains the skills of a Master Assassin, he discovers he is a descendant of the secret Assassins society.",
-                      "youtubeurl": "https://www.youtube.com/watch?v=IP3pHwh8kq4",
+                      "youtubeurl": "https://www.youtube.com/embed/IP3pHwh8kq4",
                       "image": "http://qfxcinemas.com/Home/GetThumbnailImage?eventid=6906"
                     }
                   }, {
@@ -233,7 +233,7 @@ export default function() {
                       "director": "Rabindra Shahi",
                       "movielength": "1 Hrs 55 Min",
                       "annotation": "Raj (Karma) comes to Kathmandu after his parents death in a car accident, then he meets Pooja (Bhintuna Joshi) and they fall in love, but Prabha \r\n (Khusbu Khadka) has also been secretly loving his childhood friend Raj and many times she has been proposing Raj but he always been rejecting. Bickey (Suresh Gamal) also has crush on Pooja. But suddenly Pooja has to go to her hometown and from their she returns lately . After returning from hometown she starts to misbehave with everyone, during this time many people including Bickey are murdered by unknown person,Bhram is a revenge love story with a slight twist.",
-                      "youtubeurl": "https://www.youtube.com/watch?v=9V7lTMMLD-Y",
+                      "youtubeurl": "https://www.youtube.com/embed/9V7lTMMLD-Y",
                       "image": "http://qfxcinemas.com/Home/GetThumbnailImage?eventid=6911"
                     }
                   }, {
@@ -251,7 +251,7 @@ export default function() {
                       "director": "Anna Foerster",
                       "movielength": "1 Hrs 31 Min",
                       "annotation": "Vampire death dealer Selene (Kate Beckinsale) must fend off brutal attacks from both the Lycan clan and the Vampire faction that betrayed her. With her only allies, David (Theo James) and his father Thomas (Charles Dance), she must stop the eternal war between Lycans and Vampires, even if it means she has to make the ultimate sacrifice.",
-                      "youtubeurl": "https://www.youtube.com/watch?v=QSlaWHDu5WU",
+                      "youtubeurl": "https://www.youtube.com/embed/QSlaWHDu5WU",
                       "image": "http://qfxcinemas.com/Home/GetThumbnailImage?eventid=6913"
                     }
                   }, {
@@ -269,7 +269,7 @@ export default function() {
                       "director": "Anna Foerster",
                       "movielength": "1 Hrs 31 Min",
                       "annotation": "Vampire death dealer Selene (Kate Beckinsale) must fend off brutal attacks from both the Lycan clan and the Vampire faction that betrayed her. With her only allies, David (Theo James) and his father Thomas (Charles Dance), she must stop the eternal war between Lycans and Vampires, even if it means she has to make the ultimate sacrifice.",
-                      "youtubeurl": "https://www.youtube.com/watch?v=QSlaWHDu5WU",
+                      "youtubeurl": "https://www.youtube.com/embed/QSlaWHDu5WU",
                       "image": "http://qfxcinemas.com/Home/GetThumbnailImage?eventid=6914"
                     }
                   }, {
@@ -287,7 +287,7 @@ export default function() {
                       "director": "Theodore Melfi",
                       "movielength": "2 Hrs 7 Min",
                       "annotation": "A team of African-American women provide NASA with important mathematical data needed to launch the program's first successful space missions.",
-                      "youtubeurl": "https://www.youtube.com/watch?v=vGAxf55sFLI",
+                      "youtubeurl": "https://www.youtube.com/embed/vGAxf55sFLI",
                       "image": "http://qfxcinemas.com/Home/GetThumbnailImage?eventid=6916"
                     }
                   }];
