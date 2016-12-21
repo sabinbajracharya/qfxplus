@@ -5,8 +5,8 @@
       <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a> 
       <ul class="left-fix hide-on-med-and-down">
         <li>{{#link-to 'index'}}Home{{/link-to}}</li>
-        <li><a href="badges.html">About</a></li>
-        <li><a href="collapsible.html">Contact</a></li>
+        <li>{{#link-to 'about'}}About{{/link-to}}</li>
+        <li>{{#link-to 'contact'}}Contact{{/link-to}}</li>
       </ul>
       <ul class="right hide-on-med-and-down">
         <li><a class="waves-effect waves-light btn" {{action 'toggleLogin' }}>
@@ -21,8 +21,8 @@
       <ul class="side-nav" id="slide-out">
         <li><img src="http://qfxcinemas.com/home/GetMobileAdImage?EventID=15" style="width:100%;"></li>
         <li>{{#link-to 'index'}}Home{{/link-to}}</li>
-        <li><a href="badges.html">About</a></li>
-        <li><a href="collapsible.html">Contact</a></li>
+        <li>{{#link-to 'about'}}About{{/link-to}}</li>
+        <li>{{#link-to 'contact'}}Contact{{/link-to}}</li>
         <li><a class="waves-effect waves-light btn" {{action 'toggleLogin' }}>
               {{#if isLoggedIn}}
                 Logout
