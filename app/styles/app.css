@@ -196,3 +196,11 @@ footer.page-footer {
 }
 
 /* comment component ends */
+
+/* about */
+
+.about .card-panel {
+    padding: 16px!important;
+}
+
+/* about ends */
