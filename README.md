@@ -1,6 +1,6 @@
 # qfxplus
 
-A move theatre web application of QFX cinemas developed using EmberJS
+A demo of movie theatre web application of QFX cinemas developed using EmberJS
 
 [Demo](http://sabin.wlink.com.np)
 
