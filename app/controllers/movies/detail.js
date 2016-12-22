@@ -10,7 +10,7 @@ export default Ember.Controller.extend({
         this._super(...arguments);
         var self = this;
          this.get('firebaseservice').getLoggedInUser(function(user){
-             console.log('controller commentbox callback');
+            console.log('controller commentbox callback');
             if(user){
                 self.set('isLogged', true);
                 self.set('user', user);
@@ -23,9 +23,7 @@ export default Ember.Controller.extend({
         fetchComment(movieId){
             var self = this;
             this.get('firebaseservice').getAllComments(movieId, function(values){
-                console.log("Comment callback");
-                console.log(values);
-            self.set('commentsList', values)
+                self.set('commentsList', values)
             });
         }
     }

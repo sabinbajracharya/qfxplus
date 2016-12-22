@@ -67,16 +67,9 @@ export default Ember.Object.extend({
   },
 
   getUser(callback){
-    if(!this.get('loggedin_user')){
-      var self = this;
       this.get(FIREBASE).auth().onAuthStateChanged(function(user){
-        self.set('loggedin_user', true);
         callback(user);
       });
-    }else{
-      var user = this.get(FIREBASE).auth().currentUser;
-      callback(user);
-    }
   }
 
 });
