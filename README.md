@@ -4,6 +4,12 @@ A move theatre web application of QFX cinemas developed using EmberJS
 
 [Demo](http://sabin.wlink.com.np)
 
+![Alt text](/screenshots/screenshot_1.png?raw=true "Home")
+
+![Alt text](/screenshots/screenshot_2.png?raw=true "Movie Detail")
+
+![Alt text](/screenshots/screenshot_3.png?raw=true "Home (Mobile)")
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
