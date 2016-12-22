@@ -10,11 +10,7 @@
       </ul>
       <ul class="right hide-on-med-and-down">
         <li><a class="waves-effect waves-light btn" {{action 'toggleLogin' }}>
-              {{#if isLoggedIn}}
-                Logout
-              {{else}}
-                Login
-              {{/if}}    
+              {{showLoginText}} 
             </a>
         </li>
       </ul>

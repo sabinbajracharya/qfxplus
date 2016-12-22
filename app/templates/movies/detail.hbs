@@ -7,6 +7,4 @@
     </div>
 </div>
 
-{{comment-box movieId=model.id}}
-
-{{outlet}}
+{{comment-box movieId=model.id isLogged = isLogged user= user commentsList= commentsList fetchcomments= (action 'fetchComment')}}

@@ -195,6 +195,10 @@ footer.page-footer {
     cursor:pointer;
 }
 
+.commentbox-hide{
+    display: none;
+}
+
 /* comment component ends */
 
 /* about */

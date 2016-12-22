@@ -1,7 +1,6 @@
 
 <div class="row">
-    {{#if isLoggedIn}}
-         <div class="col-md-8">
+         <div class="col-md-8 {{if isLoggedIn 'commentbox-show' 'commentbox-hide'}}">
             <div class="panel panel-white post panel-shadow">
                 <div class="post-heading">
                     <div class="pull-left image">
@@ -22,8 +21,8 @@
                 </div>
             </div>
         </div>
-    {{else}}
-        <<div class="row">
+
+        <div class="row {{if isLoggedIn 'commentbox-hide' 'commentbox-show'}}">
             <div class="col-md-8">
                 <div class="card-panel teal comment-login">
                     <a class="white-text" {{action 'login'}}>
@@ -32,8 +31,7 @@
                 </div>
             </div>
         </div>
-            
-    {{/if}}
+
 
 <!-- comment box ends -->
     {{#each commentsList as |value|}}

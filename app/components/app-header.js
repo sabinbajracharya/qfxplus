@@ -5,8 +5,14 @@ export default Ember.Component.extend({
     isLoggedIn: false,
 
     didInsertElement(){
+         this._super(...arguments);
+        //console.log('header didInsertElement');
         var self = this;
         this.get('firebaseservice').getLoggedInUser(function(user){
+          //  console.log('header callback');
+            if (self.isDestroyed) {
+                return;
+            }
             if(user){
                 self.set('isLoggedIn', true);
                 //self.set('user', user);
@@ -23,8 +29,14 @@ export default Ember.Component.extend({
 
     didRender(){
         this._super(...arguments);
+        this._super(...arguments);
         this.$('.button-collapse').sideNav();
     },
+
+    showLoginText: function(){
+        return this.get('isLoggedIn') ? "Logout" : "Login";
+
+    }.property('isLoggedIn'),
 
     actions:{
         toggleLogin(){
