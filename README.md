@@ -2,7 +2,7 @@
 
 A move theatre web application of QFX cinemas developed using EmberJS
 
-[Demo](https://github.com/username/repo/blob/branch/docs/more_words.md)
+[Demo](http://sabin.wlink.com.np)
 
 ## Prerequisites
 
