@@ -10,6 +10,8 @@ A demo of movie theatre web application of QFX cinemas developed using EmberJS
 
 ![Alt text](/screenshots/screenshot_3.png?raw=true "Home (Mobile)")
 
+![Alt text](/screenshots/screenshot_4.png?raw=true "Movie Detail (Mobile)")
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
